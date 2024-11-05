@@ -121,14 +121,6 @@
   <li><strong>Bootstrap Resampling</strong>: Nei et al., 2001; Seo et al., 2005 – For insights on resampling strategies in phylogenetic analysis.</li>
 </ol>
 
-<h2>Slides Overview</h2>
-<ol>
-  <li>Slide 1: Introduction to Orthopoxvirus Phylogenetic Analysis</li>
-  <li>Slide 2: Substitution Models (DNA vs. Protein)</li>
-  <li>Slide 3: Model Selection in IQ-TREE (ModelFinder)</li>
-  <li>Slide 4: IQ-TREE Commands and Partition Strategies</li>
-  <li>Slide 5: Results Interpretation</li>
-</ol>
 
 </body>
 </html>
