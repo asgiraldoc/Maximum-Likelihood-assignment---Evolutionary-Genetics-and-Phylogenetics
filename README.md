@@ -18,12 +18,12 @@
     <th>Species</th>
     <th>Accession Number</th>
   </tr>
-  <tr><td>Vaccinia D</td><td>DQ439815</td></tr>
+  <tr><td>Vaccinia Duke</td><td>DQ439815</td></tr>
   <tr><td>Horsepox</td><td>DQ792504</td></tr>
   <tr><td>Ectromelia</td><td>JQ410350</td></tr>
   <tr><td>Variola</td><td>LR800244</td></tr>
-  <tr><td>Vaccinia M</td><td>MF477237</td></tr>
-  <tr><td>Orthopoxvirus Abatino</td><td>MH816996</td></tr>
+  <tr><td>Vaccinia Mulford</td><td>MF477237</td></tr>
+  <tr><td>Orthopoxvirus abatino</td><td>MH816996</td></tr>
   <tr><td>Camelpox</td><td>MK910851</td></tr>
   <tr><td>Buffalopox</td><td>MW883892</td></tr>
   <tr><td>Taterapox</td><td>NC_008291</td></tr>
