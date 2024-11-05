@@ -33,7 +33,7 @@
   <tr><td>Monkeypox</td><td>NC_063383</td></tr>
 </table>
 
-<p>After downloading these genomes, we extracted 53 proteins with 100% coverage across all species, creating individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
+<p>After downloading these genomes, we extracted 53 proteins across all species, creating individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
 
 <h2>2. Diversity of Substitution Models and Choosing the Optimal Model</h2>
 
