@@ -18,18 +18,19 @@
     <th>Species</th>
     <th>Accession Number</th>
   </tr>
-  <tr><td>Buffalopox</td><td>DQ439815</td></tr>
-  <tr><td>Camelpox</td><td>DQ792504</td></tr>
+  <tr><td>Vaccinia D</td><td>DQ439815</td></tr>
+  <tr><td>Horsepox</td><td>DQ792504</td></tr>
   <tr><td>Ectromelia</td><td>JQ410350</td></tr>
-  <tr><td>Horsepox</td><td>LR800244</td></tr>
-  <tr><td>Orthopoxvirus</td><td>MF477237</td></tr>
-  <tr><td>Raccoonpox</td><td>MH816996</td></tr>
-  <tr><td>Skunkpox</td><td>MK910851</td></tr>
-  <tr><td>Taterapox</td><td>MW883892</td></tr>
-  <tr><td>Vaccinia</td><td>NC_008291</td></tr>
-  <tr><td>Vaccinia</td><td>NC_027213</td></tr>
-  <tr><td>Variola</td><td>NC_031033</td></tr>
-  <tr><td>Volepox</td><td>NC_031038</td></tr>
+  <tr><td>Variola</td><td>LR800244</td></tr>
+  <tr><td>Vaccinia M</td><td>MF477237</td></tr>
+  <tr><td>Orthopoxvirus Abatino</td><td>MH816996</td></tr>
+  <tr><td>Camelpox</td><td>MK910851</td></tr>
+  <tr><td>Buffalopox</td><td>MW883892</td></tr>
+  <tr><td>Taterapox</td><td>NC_008291</td></tr>
+  <tr><td>Raccoonpox</td><td>NC_027213</td></tr>
+  <tr><td>Volepox</td><td>NC_031033</td></tr>
+  <tr><td>Skunkpox</td><td>NC_031038</td></tr>
+  <tr><td>Monkeypox</td><td>NC_063383</td></tr>
 </table>
 
 <p>After downloading these genomes, we extracted 53 proteins with 100% coverage across all species, creating individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
