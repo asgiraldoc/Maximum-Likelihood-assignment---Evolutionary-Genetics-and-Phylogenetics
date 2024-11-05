@@ -46,6 +46,26 @@
 <h3>Understanding Amino Acid (AA) Substitution Models with Empirical Frequencies</h3>
 <p>Amino acid substitution models are crucial for accurately representing evolutionary processes at the protein level. Unlike nucleotide models, which account for only four bases, AA models handle 20 amino acids, each with unique properties and substitution patterns. IQ-TREE supports several AA substitution models, including those with <strong>empirical frequencies</strong> derived from specific organisms or protein families, such as yeast, flu, and others. Using empirical frequencies can enhance model fit for datasets similar to those used to generate these frequencies.</p>
 
+<h3>Common Amino Acid (AA) Substitution Models in Phylogenetic Analysis</h3>
+<p>In protein phylogenetics, selecting an appropriate substitution model is crucial for accurate tree inference. Various amino acid (AA) substitution models, such as BLOSUM, PAM, JTT, LG, and WAG, are commonly used. These models differ in their underlying data sources and the evolutionary assumptions they make, impacting how they fit specific protein datasets.</p>
+
+<h3>BLOSUM Model</h3>
+<p>The <strong>BLOSUM (BLOcks of Amino Acid Substitution Matrix)</strong> series is derived from comparisons of homologous protein sequences and is widely used in bioinformatics. Each BLOSUM matrix (e.g., BLOSUM62, BLOSUM80) is tailored to different levels of sequence similarity:</p>
+<ul>
+  <li><strong>BLOSUM62</strong>: This matrix is based on sequences with approximately 62% identity, making it suitable for moderately conserved protein regions. It is commonly used for general protein alignment and is often a good choice for datasets with moderate sequence similarity.</li>
+  <li><strong>BLOSUM80</strong>: Derived from highly similar sequences, BLOSUM80 is more appropriate for closely related proteins, capturing subtle substitution patterns among highly conserved amino acids.</li>
+</ul>
+<p>In phylogenetics, BLOSUM matrices are often adapted into models that can capture specific substitution probabilities based on sequence conservation levels, making them versatile for various types of protein datasets.</p>
+
+<h3>Other Common Protein Models</h3>
+<ul>
+  <li><strong>PAM (Point Accepted Mutation) Series</strong>: Developed from observed mutations in closely related proteins, PAM matrices are tailored to high similarity datasets. For instance, PAM1 models minimal evolutionary divergence, while higher PAM numbers (e.g., PAM250) represent more distant relationships. PAM is often used for proteins with low to moderate divergence.</li>
+  <li><strong>JTT (Jones-Taylor-Thornton)</strong>: This model is derived from a large set of protein sequences and is widely applicable to general protein data. It provides a balanced approach for datasets with a range of evolutionary divergences.</li>
+  <li><strong>LG (Le and Gascuel)</strong>: The LG model is a newer, general-purpose model derived from a large protein alignment database. It is highly flexible and frequently used due to its robust fit across many datasets.</li>
+  <li><strong>WAG (Whelan and Goldman)</strong>: Similar to JTT, the WAG model is based on a broad dataset of proteins and is suitable for datasets with various levels of evolutionary divergence.</li>
+</ul>
+
+
 <h3>Why Use Empirical Frequencies?</h3>
 <ul>
   <li><strong>Organism-Specific Adaptations</strong>: Empirical models, like those derived from yeast or flu virus proteins, capture substitution patterns typical of those organisms. For example, yeast-based models reflect the evolutionary pressures and biochemical constraints in yeast proteins, potentially leading to more accurate trees for similar datasets.</li>
