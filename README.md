@@ -54,18 +54,14 @@
 <h2>4. IQ-TREE Commands and Analysis Steps</h2>
 
 <h3>Step 1: Running IQ-TREE with a Single Substitution Model</h3>
-<pre><code>iqtree -s concatenated_proteins.phy -m LG+G -B 1000</code></pre>
+<pre><code>iqtree -s concatenated_proteins.phy -m TEST -B 1000</code></pre>
 <p>Explanation: This command specifies the LG model with gamma rate variation (+G) and performs ultrafast bootstrapping (-B 1000) for branch support.</p>
 
 <h3>Step 2: Running IQ-TREE with Partitioned Model Using ModelFinder</h3>
 <pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP -B 1000</code></pre>
 <p>Explanation: This command applies ModelFinder (-m MFP) to identify the best model for each partition (protein). Bootstrapping is performed with 1000 replicates.</p>
 
-<h3>Step 3: Using the Merged Model with ModelFinder (MFP+MERGE)</h3>
-<pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP+MERGE -B 1000</code></pre>
-<p>Explanation: Here, IQ-TREE merges similar partitions based on model fit (MFP+MERGE), creating a balanced approach between single and fully partitioned models.</p>
-
-<h3>Step 4: Resampling Strategies</h3>
+<h3>Step 3: Resampling Strategies</h3>
 <ol>
   <li><strong>Bootstrap by Gene</strong>:
     <pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -B 1000 --sampling GENE</code></pre>
