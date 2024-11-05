@@ -70,7 +70,7 @@
 <ul>
   <li><strong>Organism-Specific Adaptations</strong>: Empirical models, like those derived from yeast or flu virus proteins, capture substitution patterns typical of those organisms. For example, yeast-based models reflect the evolutionary pressures and biochemical constraints in yeast proteins, potentially leading to more accurate trees for similar datasets.</li>
   <li><strong>Improved Model Fit</strong>: Empirical frequency models incorporate pre-calculated amino acid frequencies from large datasets, which can improve the likelihood and fit of the model when used with similar protein data. This is particularly useful when protein datasets align with the evolutionary history of the source of the empirical data.</li>
-  <li><strong>Application to Specialized Data</strong>: In our exercise, some proteins aligned well with models like <code>FLU</code> or <code>YEAST</code>. Such models offer refined substitution matrices that account for specific selective pressures in these organisms, making them highly suitable for proteins from closely related taxa or functionally similar proteins.</li>
+  <li><strong>Application to Specialized Data</strong>: In our exercise, some proteins aligned well with models like <code>FLU</code>,  <code>HIVb</code> or <code>YEAST</code>. Such models offer refined substitution matrices that account for specific selective pressures in these organisms, making them highly suitable for proteins from closely related taxa or functionally similar proteins.</li>
 </ul>
 
 
