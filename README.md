@@ -53,11 +53,6 @@
   <li><strong>Application to Specialized Data</strong>: In our exercise, some proteins aligned well with models like <code>FLU</code> or <code>YEAST</code>. Such models offer refined substitution matrices that account for specific selective pressures in these organisms, making them highly suitable for proteins from closely related taxa or functionally similar proteins.</li>
 </ul>
 
-<h3>Example Command Using Empirical AA Models</h3>
-<pre><code>iqtree -s concatenated_proteins.phy -m LG+F+G -B 1000</code></pre>
-<p>Explanation: Here, <code>LG+F+G</code> applies the LG model with empirical frequencies (+F) and gamma rate variation (+G), which adjusts for unequal substitution rates across sites. The <code>+F</code> option tells IQ-TREE to use observed amino acid frequencies in the dataset rather than assuming equal frequencies, improving the accuracy of branch length estimates.</p>
-
-<p>By testing various models, including those with organism-specific empirical frequencies, we ensure that our phylogenetic inference reflects the unique evolutionary patterns of our protein dataset, enhancing the reliability of the inferred tree topology.</p>
 
 
 <h2>3. Exercise Overview</h2>
