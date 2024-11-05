@@ -1,0 +1,68 @@
+#nexus
+begin sets;
+    charset part1 = nextclade_gene_OPG048.translation.fasta:AA, *;
+    charset part2 = nextclade_gene_OPG054.translation.fasta:AA, *;
+    charset part3 = nextclade_gene_OPG057.translation.fasta:AA, *;
+    charset part4 = nextclade_gene_OPG059.translation.fasta:AA, *;
+    charset part5 = nextclade_gene_OPG062.translation.fasta:AA, *;
+    charset part6 = nextclade_gene_OPG068.translation.fasta:AA, *;
+    charset part7 = nextclade_gene_OPG072.translation.fasta:AA, *;
+    charset part8 = nextclade_gene_OPG075.translation.fasta:AA, *;
+    charset part9 = nextclade_gene_OPG076.translation.fasta:AA, *;
+    charset part10 = nextclade_gene_OPG077.translation.fasta:AA, *;
+    charset part11 = nextclade_gene_OPG081.translation.fasta:AA, *;
+    charset part12 = nextclade_gene_OPG085.translation.fasta:AA, *;
+    charset part13 = nextclade_gene_OPG086.translation.fasta:AA, *;
+    charset part14 = nextclade_gene_OPG088.translation.fasta:AA, *;
+    charset part15 = nextclade_gene_OPG090.translation.fasta:AA, *;
+    charset part16 = nextclade_gene_OPG091.translation.fasta:AA, *;
+    charset part17 = nextclade_gene_OPG093.translation.fasta:AA, *;
+    charset part18 = nextclade_gene_OPG094.translation.fasta:AA, *;
+    charset part19 = nextclade_gene_OPG095.translation.fasta:AA, *;
+    charset part20 = nextclade_gene_OPG098.translation.fasta:AA, *;
+    charset part21 = nextclade_gene_OPG099.translation.fasta:AA, *;
+    charset part22 = nextclade_gene_OPG102.translation.fasta:AA, *;
+    charset part23 = nextclade_gene_OPG103.translation.fasta:AA, *;
+    charset part24 = nextclade_gene_OPG104.translation.fasta:AA, *;
+    charset part25 = nextclade_gene_OPG105.translation.fasta:AA, *;
+    charset part26 = nextclade_gene_OPG106.translation.fasta:AA, *;
+    charset part27 = nextclade_gene_OPG111.translation.fasta:AA, *;
+    charset part28 = nextclade_gene_OPG114.translation.fasta:AA, *;
+    charset part29 = nextclade_gene_OPG115.translation.fasta:AA, *;
+    charset part30 = nextclade_gene_OPG117.translation.fasta:AA, *;
+    charset part31 = nextclade_gene_OPG118.translation.fasta:AA, *;
+    charset part32 = nextclade_gene_OPG119.translation.fasta:AA, *;
+    charset part33 = nextclade_gene_OPG121.translation.fasta:AA, *;
+    charset part34 = nextclade_gene_OPG122.translation.fasta:AA, *;
+    charset part35 = nextclade_gene_OPG124.translation.fasta:AA, *;
+    charset part36 = nextclade_gene_OPG125.translation.fasta:AA, *;
+    charset part37 = nextclade_gene_OPG126.translation.fasta:AA, *;
+    charset part38 = nextclade_gene_OPG127.translation.fasta:AA, *;
+    charset part39 = nextclade_gene_OPG140.translation.fasta:AA, *;
+    charset part40 = nextclade_gene_OPG141.translation.fasta:AA, *;
+    charset part41 = nextclade_gene_OPG142.translation.fasta:AA, *;
+    charset part42 = nextclade_gene_OPG143.translation.fasta:AA, *;
+    charset part43 = nextclade_gene_OPG145.translation.fasta:AA, *;
+    charset part44 = nextclade_gene_OPG147.translation.fasta:AA, *;
+    charset part45 = nextclade_gene_OPG148.translation.fasta:AA, *;
+    charset part46 = nextclade_gene_OPG149.translation.fasta:AA, *;
+    charset part47 = nextclade_gene_OPG150.translation.fasta:AA, *;
+    charset part48 = nextclade_gene_OPG156.translation.fasta:AA, *;
+    charset part49 = nextclade_gene_OPG158.translation.fasta:AA, *;
+    charset part50 = nextclade_gene_OPG162.translation.fasta:AA, *;
+    charset part51 = nextclade_gene_OPG163.translation.fasta:AA, *;
+    charset part52 = nextclade_gene_OPG171.translation.fasta:AA, *;
+    charset part53 = nextclade_gene_OPG200.translation.fasta:AA, *;
+    charpartition mine = LG+I:part1, HIVw+F+I:part2, FLAVI+F+I:part3, HIVb:part4, Q.mammal+G4:part5, 
+                   Q.plant+F+G4:part6, FLU:part7, Q.plant+G4:part8, mtInv:part9, Q.yeast+I:part10,
+                   mtMet+I:part11, Q.plant+F+G4:part12, Q.yeast:part13, Q.yeast+I:part14, HIVb:part15,
+                   Q.plant+G4:part16, Q.insect:part17, FLU+I:part18, FLU+F+I:part19, Q.plant+F+G4:part20,
+                   Q.plant+G4:part21, Q.plant+G4:part22, FLU:part23, FLU:part24, Q.plant+F+I:part25,
+                   Q.insect+G4:part26, Q.insect+I:part27, Q.plant+I:part28, HIVw+F+G4:part29, JTT+F+R2:part30,
+                   Q.plant+F+R2:part31, FLU:part32, HIVb+F+G4:part33, Q.bird+F+G4:part34, Q.yeast:part35,
+                   Q.plant+F+I:part36, Q.plant+I:part37, Q.insect:part38, mtART:part39, mtMet:part40,
+                   Q.yeast+G4:part41, FLU+I:part42, Q.bird+F+R2:part43, FLU:part44, Q.bird+F+I+R3:part45,
+                   HIVw+F+G4:part46, HIVb+F+G4:part47, Q.yeast+G4:part48, FLAVI:part49, FLU+G4:part50,
+                   Q.bird+F+I:part51, JTT:part52, FLU+G4:part53;
+end;
+
