@@ -111,10 +111,9 @@
   <li><strong>MFP+MERGE Strategy</strong>: Assess whether merging improves computational efficiency without sacrificing tree support or topology.</li>
   <li><strong>Bootstrap Sampling</strong>: Evaluate whether resampling by gene or gene and site leads to improved support values.</li>
 </ol>
-<img src="TreevsTree.jpg" alt="Description of image" width="600">
 
 <div style="text-align: center;">
-    <img src="TreevsTree.jpg" alt="Description of image" width="800">
+    <img src="TreevsTree.jpg" alt="Comparison trees" width="800">
 </div>
 
 
