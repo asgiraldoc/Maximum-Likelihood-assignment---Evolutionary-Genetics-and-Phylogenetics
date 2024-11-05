@@ -111,6 +111,7 @@
   <li><strong>MFP+MERGE Strategy</strong>: Assess whether merging improves computational efficiency without sacrificing tree support or topology.</li>
   <li><strong>Bootstrap Sampling</strong>: Evaluate whether resampling by gene or gene and site leads to improved support values.</li>
 </ol>
+<img src="TreevsTree.jpg" alt="Description of image" width="600">
 
 <h2>6. Additional Topic Focus: ModelFinder and Partition Merging</h2>
 <p>In this exercise, we focus on <strong>partition merging with ModelFinder</strong> to optimize tree topology. By using the MFP+MERGE option, we test if merging similar partitions maintains phylogenetic resolution while reducing the computational burden. This exercise highlights when and why partition merging can be advantageous in multi-protein datasets.</p>
