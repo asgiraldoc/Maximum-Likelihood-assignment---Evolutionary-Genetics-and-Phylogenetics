@@ -49,7 +49,7 @@
 <h3>Common Amino Acid (AA) Substitution Models in Phylogenetic Analysis</h3>
 <p>In protein phylogenetics, selecting an appropriate substitution model is crucial for accurate tree inference. Various amino acid (AA) substitution models, such as BLOSUM, PAM, JTT, LG, and WAG, are commonly used. These models differ in their underlying data sources and the evolutionary assumptions they make, impacting how they fit specific protein datasets.</p>
 
-<h3>BLOSUM Model</h3>
+<h4>BLOSUM Model</h4>
 <p>The <strong>BLOSUM (BLOcks of Amino Acid Substitution Matrix)</strong> series is derived from comparisons of homologous protein sequences and is widely used in bioinformatics. Each BLOSUM matrix (e.g., BLOSUM62, BLOSUM80) is tailored to different levels of sequence similarity:</p>
 <ul>
   <li><strong>BLOSUM62</strong>: This matrix is based on sequences with approximately 62% identity, making it suitable for moderately conserved protein regions. It is commonly used for general protein alignment and is often a good choice for datasets with moderate sequence similarity.</li>
@@ -57,7 +57,7 @@
 </ul>
 <p>In phylogenetics, BLOSUM matrices are often adapted into models that can capture specific substitution probabilities based on sequence conservation levels, making them versatile for various types of protein datasets.</p>
 
-<h3>Other Common Protein Models</h3>
+<h4>Other Common Protein Models</h4>
 <ul>
   <li><strong>PAM (Point Accepted Mutation) Series</strong>: Developed from observed mutations in closely related proteins, PAM matrices are tailored to high similarity datasets. For instance, PAM1 models minimal evolutionary divergence, while higher PAM numbers (e.g., PAM250) represent more distant relationships. PAM is often used for proteins with low to moderate divergence.</li>
   <li><strong>JTT (Jones-Taylor-Thornton)</strong>: This model is derived from a large set of protein sequences and is widely applicable to general protein data. It provides a balanced approach for datasets with a range of evolutionary divergences.</li>
