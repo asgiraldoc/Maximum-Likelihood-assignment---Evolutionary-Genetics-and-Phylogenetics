@@ -43,6 +43,23 @@
 <h3>Choosing the Optimal Model</h3>
 <p>IQ-TREE's ModelFinder enables automatic model selection by testing various models and calculating which one best fits the data using criteria like AIC or BIC. This tutorial includes examples of running ModelFinder for both DNA and protein sequences.</p>
 
+<h2>Understanding Amino Acid (AA) Substitution Models with Empirical Frequencies</h2>
+<p>Amino acid substitution models are crucial for accurately representing evolutionary processes at the protein level. Unlike nucleotide models, which account for only four bases, AA models handle 20 amino acids, each with unique properties and substitution patterns. IQ-TREE supports several AA substitution models, including those with <strong>empirical frequencies</strong> derived from specific organisms or protein families, such as yeast, flu, and others. Using empirical frequencies can enhance model fit for datasets similar to those used to generate these frequencies.</p>
+
+<h3>Why Use Empirical Frequencies?</h3>
+<ul>
+  <li><strong>Organism-Specific Adaptations</strong>: Empirical models, like those derived from yeast or flu virus proteins, capture substitution patterns typical of those organisms. For example, yeast-based models reflect the evolutionary pressures and biochemical constraints in yeast proteins, potentially leading to more accurate trees for similar datasets.</li>
+  <li><strong>Improved Model Fit</strong>: Empirical frequency models incorporate pre-calculated amino acid frequencies from large datasets, which can improve the likelihood and fit of the model when used with similar protein data. This is particularly useful when protein datasets align with the evolutionary history of the source of the empirical data.</li>
+  <li><strong>Application to Specialized Data</strong>: In our exercise, some proteins aligned well with models like <code>FLU</code> or <code>YEAST</code>. Such models offer refined substitution matrices that account for specific selective pressures in these organisms, making them highly suitable for proteins from closely related taxa or functionally similar proteins.</li>
+</ul>
+
+<h3>Example Command Using Empirical AA Models</h3>
+<pre><code>iqtree -s concatenated_proteins.phy -m LG+F+G -B 1000</code></pre>
+<p>Explanation: Here, <code>LG+F+G</code> applies the LG model with empirical frequencies (+F) and gamma rate variation (+G), which adjusts for unequal substitution rates across sites. The <code>+F</code> option tells IQ-TREE to use observed amino acid frequencies in the dataset rather than assuming equal frequencies, improving the accuracy of branch length estimates.</p>
+
+<p>By testing various models, including those with organism-specific empirical frequencies, we ensure that our phylogenetic inference reflects the unique evolutionary patterns of our protein dataset, enhancing the reliability of the inferred tree topology.</p>
+
+
 <h2>3. Exercise Overview</h2>
 
 <p>We'll use IQ-TREE to analyze the concatenated protein alignments under three approaches:</p>
