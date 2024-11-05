@@ -43,7 +43,7 @@
 <h3>Choosing the Optimal Model</h3>
 <p>IQ-TREE's ModelFinder enables automatic model selection by testing various models and calculating which one best fits the data using criteria like AIC or BIC. This tutorial includes examples of running ModelFinder for both DNA and protein sequences.</p>
 
-<h2>Understanding Amino Acid (AA) Substitution Models with Empirical Frequencies</h2>
+<h3>Understanding Amino Acid (AA) Substitution Models with Empirical Frequencies</h3>
 <p>Amino acid substitution models are crucial for accurately representing evolutionary processes at the protein level. Unlike nucleotide models, which account for only four bases, AA models handle 20 amino acids, each with unique properties and substitution patterns. IQ-TREE supports several AA substitution models, including those with <strong>empirical frequencies</strong> derived from specific organisms or protein families, such as yeast, flu, and others. Using empirical frequencies can enhance model fit for datasets similar to those used to generate these frequencies.</p>
 
 <h3>Why Use Empirical Frequencies?</h3>
