@@ -123,7 +123,7 @@ Explanation:
 <pre><code>iqtree -s protein_alignment.fasta -st AA -m TESTONLYNEW -AIC </code></pre>
 <p>Explanation: This command uses ModelFinder (<code>-m TESTONLYNEW</code>) to identify the best substitution model for each protein alignment (<code>-st AA</code>). The <code>-AIC</code> option specifies the Akaike Information Criterion (AIC) for model selection.</p>
 
-<p><strong>Note:</strong> that this command is focus solely on model selection.</p>
+<p><strong>Note:</strong> This command focuses solely on model selection, not on phylogenetic tree inference.</p>
 
 <p>After identifying the best model for each alignment, the next step is to generate the file required to build a partitioned model according to IQ-TREE specifications. For more details, see the <a href="http://www.iqtree.org/doc/Advanced-Tutorial">advanced tutorial</a>.</p>
 
