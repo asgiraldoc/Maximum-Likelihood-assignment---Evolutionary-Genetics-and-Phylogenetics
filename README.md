@@ -35,6 +35,8 @@
 
 <p>After downloading these proteomes from NCBI public database, we identified and extracted 53 complete single-copy proteins that were present in all species using OrthoFinder. We then created individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
 
+<p> <strong>Note:</strong>  Although this first part is not part of the workshop, I am including it in case anyone is interested in how to generate these datasets. </p>
+
 <h3>Identification and Extraction of Single-Copy Orthologous Proteins</h3>
 
 <pre><code>orthofinder -f seqs  -o results </code></pre>
