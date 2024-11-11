@@ -66,11 +66,8 @@ Explanation:
 <h3>DNA vs. Protein Models</h3>
 <p>In phylogenetics, substitution models describe the probability of mutations occurring at different sites within a sequence, capturing the evolutionary process more accurately. <strong>DNA models</strong> (like GTR and HKY) focus on nucleotide substitutions, where different rates can be assigned to transitions (e.g., A ↔ G) and transversions (e.g., A ↔ T). <strong>Protein models</strong> (like JTT and LG) are tailored to amino acid sequences, incorporating empirical data to account for the biochemical properties of amino acids, which affect how likely one amino acid is to replace another over time. These models are essential for generating more precise phylogenetic trees based on DNA or protein data.</p>
 
-<h3>Choosing the Optimal Model</h3>
-<p>IQ-TREE's ModelFinder enables automatic model selection by testing various models and calculating which one best fits the data using criteria like AIC or BIC. This tutorial includes examples of running ModelFinder for protein sequences only.</p>
-
 <h3>Understanding Amino Acid (AA) Substitution Models with Empirical Frequencies</h3>
-<p>Amino acid substitution models are crucial for accurately representing evolutionary processes at the protein level. Unlike nucleotide models, which account for only four bases, AA models handle 20 amino acids, each with unique properties and substitution patterns. IQ-TREE supports several AA substitution models, including those with <strong>empirical frequencies</strong> derived from specific organisms or protein families, such as yeast, flu, and others. Using empirical frequencies can enhance model fit for datasets similar to those used to generate these frequencies.</p>
+<p>Amino acid substitution models are essential for capturing evolutionary patterns in proteins. Unlike nucleotide models, which work with only four bases, AA models manage the complexity of 20 amino acids, each with distinct biochemical properties and substitution behaviors. IQ-TREE supports a range of AA substitution models, including options that incorporate <strong>empirical frequencies</strong> derived from specific organisms or protein families, such as yeast and influenza. Applying these empirical frequencies can improve the model's accuracy when analyzing datasets that share similarities with those used to generate these frequency data.</p>
 
 <h3>Common Amino Acid (AA) Substitution Models in Phylogenetic Analysis</h3>
 <p>In protein phylogenetics, selecting an appropriate substitution model is crucial for accurate tree inference. Various amino acid (AA) substitution models, such as BLOSUM, PAM, JTT, LG, and WAG, are commonly used. These models differ in their underlying data sources and the evolutionary assumptions they make, impacting how they fit specific protein datasets.</p>
@@ -99,6 +96,8 @@ Explanation:
   <li><strong>Application to Specialized Data</strong>: In our exercise, some proteins aligned well with models like <code>FLU</code>,  <code>HIVb</code> or <code>YEAST</code>. Such models offer refined substitution matrices that account for specific selective pressures in these organisms, making them highly suitable for proteins from closely related taxa or functionally similar proteins.</li>
 </ul>
 
+<h3>Choosing the Optimal Model</h3>
+<p>IQ-TREE's ModelFinder enables automatic model selection by testing various models and calculating which one best fits the data using criteria like AIC or BIC. This tutorial includes examples of running ModelFinder for protein sequences only.</p>
 
 
 <h2>3. Exercise Overview</h2>
