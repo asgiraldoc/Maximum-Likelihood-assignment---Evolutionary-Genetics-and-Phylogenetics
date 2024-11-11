@@ -36,13 +36,13 @@
 <p>After downloading these proteomes from NCBI public database, we identified and extracted 53 complete single-copy proteins that were present in all species using OrthoFinder2. We then created individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
 
 <h3>Identification and Extraction of Single-Copy Orthologous Proteins</h3>
+
+<pre><code>orthofinder -f seqs/  -o results </code></pre>
+
 Explanation: This command runs OrthoFinder on protein sequences in the seqs/ folder and saves the output in a folder named results.
+
 <li> -f seqs/: Specifies the input folder with proteome sequences. </li>
 <li> -o results: Sets the output folder to results.</li>
-
-<pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP -B 1000</code></pre>
-
-<pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP -B 1000</code></pre>
 
 
 <h2>2. Diversity of Substitution Models and Choosing the Optimal Model</h2>
