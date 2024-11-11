@@ -33,7 +33,7 @@
     <tr><td><i>Monkeypox</i></td><td>NC_063383</td></tr>
 </table>
 
-<p>After downloading these proteomes from NCBI public database, we identified and extracted 53 complete single-copy proteins that were present in all species using OrthoFinder2. We then created individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
+<p>After downloading these proteomes from NCBI public database, we identified and extracted 53 complete single-copy proteins that were present in all species using OrthoFinder. We then created individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
 
 <h3>Identification and Extraction of Single-Copy Orthologous Proteins</h3>
 
@@ -47,6 +47,14 @@ Explanation: This command runs OrthoFinder on protein sequences in the seqs fold
 
 <p> Here for more information about <a href="https://github.com/davidemms/OrthoFinder">Orthofinder</a> software.</p>
 
+<h3>Generating Individual Protein Alignments with MAFFT</h3>
+
+<pre><code>
+for i in *.fasta
+do
+mafft --reorder --thread 30  cladeI-II_crystal_21_mafft.fasta > all_samples.fasta
+done
+</code></pre>
 
 <h2>2. Diversity of Substitution Models and Choosing the Optimal Model</h2>
 
