@@ -152,7 +152,17 @@ Explanation:
 <p>This variation in substitution models has evolutionary implications when inferring a concatenated phylogeny. Using a single substitution model for the entire concatenated alignment might lead to biases or misrepresentations of evolutionary relationships. By contrast, partitioned or partitioned-merged models can more accurately capture the unique substitution patterns of each protein, potentially leading to a more reliable phylogenetic inference. Overall, the diversity of models underscores the importance of using partition-specific or empirically-informed models to enhance the robustness of phylogenetic hypotheses.</p>
 
 
+<h2>5.2 Comparison of Phylogenetic Trees</h2>
 
+<p>In the figure above, the phylogenetic tree on the left was generated using the concatenated alignment, while the tree on the right was produced using a partitioned model. Although the overall topology remains identical between the two trees, differences can be observed in branch lengths and node support values. The partitioned model provides more robust support for each phylogenetic relationship, reflected in higher bootstrap values across various nodes. This indicates that the partitioned approach better captures the evolutionary nuances present in each protein sequence.</p>
+
+<div style="text-align: center;">
+    <img src="TreevsTree.jpg" alt="Comparison of Concatenated vs. Partitioned Phylogenetic Trees" width="700">
+</div>
+
+<p>There was minimal variation between the results of the partitioned and partitioned-merged models, suggesting that an optimal fit was reached with these models for this dataset. The consistency between these two approaches reinforces the reliability of using partitioned models in capturing detailed evolutionary relationships.</p>
+
+<p><strong>Conclusion:</strong> The analysis underscores the importance of using partition-specific models or partitioned-merged approaches when handling complex datasets such as this one. By accounting for the unique substitution patterns of each protein, partitioned models improve the robustness of phylogenetic inference, providing greater confidence in the evolutionary relationships depicted in the tree.</p>
 
 <h2>6. Additional Topic Focus: ModelFinder and Partition Merging</h2>
 <p>In this exercise, we focus on <strong>partition merging with ModelFinder</strong> to optimize tree topology. By using the MFP+MERGE option, we test if merging similar partitions maintains phylogenetic resolution while reducing the computational burden. This exercise highlights when and why partition merging can be advantageous in multi-protein datasets.</p>
