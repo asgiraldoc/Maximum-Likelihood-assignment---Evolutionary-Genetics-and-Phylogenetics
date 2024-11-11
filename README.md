@@ -143,13 +143,15 @@ Explanation:
 <h2>5. Results Interpretation and Comparison</h2>
 
 
-<p>The distribution of substitution models selected by IQ-TREE across the protein alignment partitions shows a significant diversity, as seen in the image above. This wide variation in model selection suggests that different evolutionary pressures and substitution patterns are at play for each protein, which could reflect functional specialization or adaptation within the Orthopoxvirus genus. Such diversity in model choice indicates that a concatenated approach, which uses a single model for all proteins, may overlook these individual evolutionary signals.</p>
-
-<p>This variation in substitution models has evolutionary implications when inferring a concatenated phylogeny. Using a single substitution model for the entire concatenated alignment might lead to biases or misrepresentations of evolutionary relationships. By contrast, partitioned or partitioned-merged models can more accurately capture the unique substitution patterns of each protein, potentially leading to a more reliable phylogenetic inference. Overall, the diversity of models underscores the importance of using partition-specific or empirically-informed models to enhance the robustness of phylogenetic hypotheses.</p>
+<p>The distribution of substitution models selected by IQ-TREE across the protein alignment partitions shows a significant diversity, as seen in the image bellow. This wide variation in model selection suggests that different evolutionary pressures and substitution patterns are at play for each protein, which could reflect functional specialization or adaptation within the Orthopoxvirus genus. Such diversity in model choice indicates that a concatenated approach (), which uses a single model for all proteins, may overlook these individual evolutionary signals.</p>
 
 <div style="text-align: center;">
     <img src="models.png" alt="IQ-TREE Models from Each Protein Alignment Partition" width="700">
 </div>
+
+<p>This variation in substitution models has evolutionary implications when inferring a concatenated phylogeny. Using a single substitution model for the entire concatenated alignment might lead to biases or misrepresentations of evolutionary relationships. By contrast, partitioned or partitioned-merged models can more accurately capture the unique substitution patterns of each protein, potentially leading to a more reliable phylogenetic inference. Overall, the diversity of models underscores the importance of using partition-specific or empirically-informed models to enhance the robustness of phylogenetic hypotheses.</p>
+
+
 
 
 <h2>6. Additional Topic Focus: ModelFinder and Partition Merging</h2>
