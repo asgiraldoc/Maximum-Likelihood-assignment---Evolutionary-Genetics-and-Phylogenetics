@@ -105,16 +105,19 @@ Explanation:
 
 <p>We'll use IQ-TREE to analyze the concatenated protein alignments under three approaches:</p>
 <ol>
-  <li><strong>Single Substitution Model</strong>: Applies one substitution model to all sequences.</li>
+  <li><strong>Single Substitution Model</strong>: Applies one substitution model to all sequences (concatenated sequences).</li>
   <li><strong>Partitioned Model</strong>: Uses the best model for each partition (protein) individually.</li>
-  <li><strong>Merged Model (MFP+MERGE)</strong>: Merges partitions to find an optimal model fit.</li>
+  <li><strong>Partitioned-Merged Model (MFP+MERGE)</strong>: Merges partitions to find an optimal model fit.</li>
 </ol>
 
 <h2>4. IQ-TREE Commands and Analysis Steps</h2>
 
 <h3>Step 1: Running IQ-TREE with a Single Substitution Model</h3>
-<pre><code>iqtree -s concatenated_proteins.phy -m TEST -B 1000</code></pre>
-<p>Explanation: This command specifies the LG model with gamma rate variation (+G) and performs ultrafast bootstrapping (-B 1000) for branch support.</p>
+<pre><code>iqtree -s concatenatedProt.fasta -st AA -bb 1000 -alrt 1000 -m TEST</code></pre>
+
+<p>Explanation: This command runs IQ-TREE on the alignment file <code>concatenatedProt.fasta</code>, specifying a AA dataset (<code>-st AA</code>). It tests various substitution models (<code>-m TEST</code>) to find the best fit for the data. The command also performs 1000 ultrafast bootstrap replicates (<code>-bb 1000</code>) and 1000 SH-like approximate likelihood ratio test replicates (<code>-alrt 1000</code>) to assess branch support.</p>
+
+<p><strong>Note:</strong> The output will include a phylogenetic tree file, which contains the inferred evolutionary relationships among sequences in <code>concatenatedProt.fasta</code>. The tree will be annotated with branch support values from both the ultrafast bootstrap and SH-like approximate likelihood ratio tests, providing a measure of confidence in each branch.</p>
 
 <h3>Step 2: Running IQ-TREE with Partitioned Model Using ModelFinder</h3>
 <pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP -B 1000</code></pre>
