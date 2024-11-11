@@ -154,7 +154,7 @@ Explanation:
 
 <h2>5.2 Comparison of Phylogenetic Trees</h2>
 
-<p>In the figure above, the phylogenetic tree on the left was generated using the concatenated alignment, while the tree on the right was produced using a partitioned model. Although the overall topology remains identical between the two trees, differences can be observed in branch lengths and node support values. The partitioned model provides more robust support for each phylogenetic relationship, reflected in higher bootstrap values across various nodes. This indicates that the partitioned approach better captures the evolutionary nuances present in each protein sequence.</p>
+<p>In the figure bellow, the phylogenetic tree on the left was generated using the concatenated alignment, while the tree on the right was produced using a partitioned model. Although the overall topology remains identical between the two trees, differences can be observed in branch lengths and node support values. The partitioned model provides more robust support for each phylogenetic relationship, reflected in higher bootstrap values across various nodes. This indicates that the partitioned approach better captures the evolutionary nuances present in each protein sequence.</p>
 
 <div style="text-align: center;">
     <img src="TreevsTree.jpg" alt="Comparison of Concatenated vs. Partitioned Phylogenetic Trees" width="700">
