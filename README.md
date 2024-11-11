@@ -10,7 +10,7 @@
 <h1>IQ-TREE Phylogenetic Analysis Tutorial: Orthopoxvirus Species</h1>
 
 <h2>1. Introduction</h2>
-<p>In this exercise, we will work with the complete proteomes of 13 Orthopoxvirus species, comparing different strategies for phylogenetic inference using IQ-TREE. The dataset includes protein alignments of single-copy genes across species. Our goal is to explore the impact of using a single general substitution model, a partitioned substitution model, and a partitioned-merged model approach on the robustness of our phylogenetic hypotheses. <strong>All the files needed to work are available in this repository.</strong>strong> </p>
+<p>In this exercise, we will work with the complete proteomes of 13 Orthopoxvirus species, comparing different strategies for phylogenetic inference using IQ-TREE. The dataset includes protein alignments of single-copy genes across species. Our goal is to explore the impact of using a single general substitution model, a partitioned substitution model, and a partitioned-merged model approach on the robustness of our phylogenetic hypotheses. <strong>All the files needed to work are available in this repository. </strong> </p>
 
 <h3>Species and Accession Numbers</h3>
 <table>
