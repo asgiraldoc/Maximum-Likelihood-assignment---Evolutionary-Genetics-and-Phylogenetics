@@ -10,7 +10,7 @@
 <h1>IQ-TREE Phylogenetic Analysis Tutorial: Orthopoxvirus Species</h1>
 
 <h2>1. Introduction</h2>
-<p>In this exercise, we will work with the complete genomes of 13 Orthopoxvirus species, comparing different strategies for phylogenetic inference using IQ-TREE. The dataset includes 52 protein alignments across species with 100% coverage in all sequences. Our goal is to explore the impact of using a single general substitution model, a partitioned substitution model, and a partitioned-merged model approach on the robustness of our phylogenetic hypotheses.</p>
+<p>In this exercise, we will work with the complete proteomes of 13 Orthopoxvirus species, comparing different strategies for phylogenetic inference using IQ-TREE. The dataset includes protein alignments of single-copy genes across species. Our goal is to explore the impact of using a single general substitution model, a partitioned substitution model, and a partitioned-merged model approach on the robustness of our phylogenetic hypotheses.</p>
 
 <h3>Species and Accession Numbers</h3>
 <table>
@@ -33,7 +33,17 @@
     <tr><td><i>Monkeypox</i></td><td>NC_063383</td></tr>
 </table>
 
-<p>After downloading these genomes, we extracted 53 proteins across all species, creating individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
+<p>After downloading these proteomes from NCBI public database, we identified and extracted 53 complete single-copy proteins that were present in all species using OrthoFinder2. We then created individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
+
+<h3>Identification and Extraction of Single-Copy Orthologous Proteins</h3>
+Explanation: This command runs OrthoFinder on protein sequences in the seqs/ folder and saves the output in a folder named results.
+<li> -f seqs/: Specifies the input folder with proteome sequences. </li>
+<li> -o results: Sets the output folder to results.</li>
+
+<pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP -B 1000</code></pre>
+
+<pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP -B 1000</code></pre>
+
 
 <h2>2. Diversity of Substitution Models and Choosing the Optimal Model</h2>
 
