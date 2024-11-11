@@ -44,7 +44,7 @@ Explanation: This command runs OrthoFinder on protein sequences in the seqs/ fol
 <li> -f seqs/: Specifies the input folder with proteome sequences. </li>
 <li> -o results: Sets the output folder to results.</li>
 
-Here for more information about Orthofinder software: <a href="https://www.ncbi.nlm.nih.gov"></a>
+Here for more information about Orthofinder software: <a href="https://www.ncbi.nlm.nih.gov">NCBI Public Database</a>
 
 <h2>2. Diversity of Substitution Models and Choosing the Optimal Model</h2>
 
