@@ -168,11 +168,11 @@ Explanation:
 <p>In this exercise, we focus on <strong>partition merging with ModelFinder</strong> to optimize tree topology. By using the MFP+MERGE option, we test if merging similar partitions maintains phylogenetic resolution while reducing the computational burden. This exercise highlights when and why partition merging can be advantageous in multi-protein datasets.</p>
 
 <h2>7. Resources and Suggested Readings</h2>
-<ol>
+<ul>
   <li><strong>ModelFinder</strong>: Lanfear et al., 2012 – For details on model selection and partition merging in phylogenetics.</li>
   <li><strong>Bootstrap Resampling</strong>: Nei et al., 2001; Seo et al., 2005 – For insights on resampling strategies in phylogenetic analysis.</li>
-</ol>
-
+  <li><strong>IQ-TREE Advanced Tutorial</strong>: <a href="http://www.iqtree.org/doc/Advanced-Tutorial">IQ-TREE Documentation</a> – Detailed instructions on advanced IQ-TREE usage, including partition models, resampling strategies, and model selection.</li>
+</ul>
 
 </body>
 </html>
