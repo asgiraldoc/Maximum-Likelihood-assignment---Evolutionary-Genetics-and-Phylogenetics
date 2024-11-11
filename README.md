@@ -152,7 +152,7 @@ Explanation:
 <p>This variation in substitution models has evolutionary implications when inferring a concatenated phylogeny. Using a single substitution model for the entire concatenated alignment might lead to biases or misrepresentations of evolutionary relationships. By contrast, partitioned or partitioned-merged models can more accurately capture the unique substitution patterns of each protein, potentially leading to a more reliable phylogenetic inference. Overall, the diversity of models underscores the importance of using partition-specific or empirically-informed models to enhance the robustness of phylogenetic hypotheses.</p>
 
 
-<h2>5.2 Comparison of Phylogenetic Trees</h2>
+<h3>5.2 Comparison of Phylogenetic Trees</h3>
 
 <p>In the figure bellow, the phylogenetic tree on the left was generated using the concatenated alignment, while the tree on the right was produced using a partitioned model. Although the overall topology remains identical between the two trees, differences can be observed in branch lengths and node support values. The partitioned model provides more robust support for each phylogenetic relationship, reflected in higher bootstrap values across various nodes. This indicates that the partitioned approach better captures the evolutionary nuances present in each protein sequence.</p>
 
