@@ -64,7 +64,7 @@ Explanation:
 <h2>2. Diversity of Substitution Models and Choosing the Optimal Model</h2>
 
 <h3>DNA vs. Protein Models</h3>
-<p>In phylogenetics, substitution models describe the probability of mutations occurring at different sites in the sequence. DNA models (like GTR and HKY) consider nucleotide substitutions, while protein models (like JTT and LG) account for amino acid replacements.</p>
+<p>In phylogenetics, substitution models describe the probability of mutations occurring at different sites within a sequence, capturing the evolutionary process more accurately. <strong>DNA models</strong> (like GTR and HKY) focus on nucleotide substitutions, where different rates can be assigned to transitions (e.g., A ↔ G) and transversions (e.g., A ↔ T). <strong>Protein models</strong> (like JTT and LG) are tailored to amino acid sequences, incorporating empirical data to account for the biochemical properties of amino acids, which affect how likely one amino acid is to replace another over time. These models are essential for generating more precise phylogenetic trees based on DNA or protein data.</p>
 
 <h3>Choosing the Optimal Model</h3>
 <p>IQ-TREE's ModelFinder enables automatic model selection by testing various models and calculating which one best fits the data using criteria like AIC or BIC. This tutorial includes examples of running ModelFinder for protein sequences only.</p>
