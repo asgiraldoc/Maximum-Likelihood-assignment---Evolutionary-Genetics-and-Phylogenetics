@@ -38,7 +38,7 @@
 
 <p> <strong>---------------------------------------------------------------------------------------</strong></p>
 
-<p> <strong>Note: Although this first part is not part of the assignment, I am including it in case anyone is interested in knowing how to generate these datasets. Also, the full data will be available in the data folder.</strong> </p>
+<p> <strong>Note: Although this first part is not part of the assignment, I am including it in case anyone is interested in knowing how to generate these datasets. Also, the full data is available in the compressed data folder (data.zip).</strong> </p>
 
 <p> <strong>---------------------------------------------------------------------------------------</strong></p>
 
