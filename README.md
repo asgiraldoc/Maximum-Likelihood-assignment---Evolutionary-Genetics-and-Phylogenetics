@@ -70,7 +70,7 @@ Explanation:
 <p>Amino acid substitution models are essential for capturing evolutionary patterns in proteins. Unlike nucleotide models, which work with only four bases, AA models manage the complexity of 20 amino acids, each with distinct biochemical properties and substitution behaviors. IQ-TREE supports a range of AA substitution models, including options that incorporate <strong>empirical frequencies</strong> derived from specific organisms or protein families, such as yeast and influenza. Applying these empirical frequencies can improve the model's accuracy when analyzing datasets that share similarities with those used to generate these frequency data.</p>
 
 <h3>Common Amino Acid (AA) Substitution Models in Phylogenetic Analysis</h3>
-<p>In protein phylogenetics, selecting an appropriate substitution model is crucial for accurate tree inference. Various amino acid (AA) substitution models, such as BLOSUM, PAM, JTT, LG, and WAG, are commonly used. These models differ in their underlying data sources and the evolutionary assumptions they make, impacting how they fit specific protein datasets.</p>
+<p>Various amino acid (AA) substitution models, such as BLOSUM, PAM, JTT, LG, and WAG, are commonly used. These models differ in their underlying data sources and the evolutionary assumptions they make, impacting how they fit specific protein datasets.</p>
 
 <h4>BLOSUM Model</h4>
 <p>The <strong>BLOSUM (BLOcks of Amino Acid Substitution Matrix)</strong> series is derived from comparisons of homologous protein sequences and is widely used in bioinformatics. Each BLOSUM matrix (e.g., BLOSUM62, BLOSUM80) is tailored to different levels of sequence similarity:</p>
