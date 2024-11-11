@@ -49,12 +49,18 @@ Explanation: This command runs OrthoFinder on protein sequences in the seqs fold
 
 <h3>Generating Individual Protein Alignments with MAFFT</h3>
 
+The following script uses MAFFT to align each protein sequence file individually, optimizing for multiple threads to speed up the process:
+
 <pre><code>
 for i in *.fasta
 do
-mafft --reorder --thread 30  cladeI-II_crystal_21_mafft.fasta > all_samples.fasta
+  mafft --reorder --thread 30 "$i" > "${i%.fasta}_aligned.fasta"
 done
 </code></pre>
+
+Explanation:
+<li> for i in *.fasta: Loops through each FASTA file in the directory.  </li>
+<li> mafft "$i" > "${i%.fasta}_aligned.fasta": Uses MAFFT to align the sequences in each file ($i) and the aligned output for each file is saved with _aligned.fasta appended to its name </li>
 
 <h2>2. Diversity of Substitution Models and Choosing the Optimal Model</h2>
 
