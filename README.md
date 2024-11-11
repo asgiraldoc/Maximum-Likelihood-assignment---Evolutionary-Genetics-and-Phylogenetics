@@ -18,19 +18,19 @@
     <th>Species</th>
     <th>Accession Number</th>
   </tr>
-    <tr><td><i>Vaccinia Duke</i></td><td><i>DQ439815</i></td></tr>
-    <tr><td><i>Horsepox</i></td><td><i>DQ792504</i></td></tr>
-    <tr><td><i>Ectromelia</i></td><td><i>JQ410350</i></td></tr>
-    <tr><td><i>Variola</i></td><td><i>LR800244</i></td></tr>
-    <tr><td><i>Vaccinia Mulford</i></td><td><i>MF477237</i></td></tr>
-    <tr><td><i>Orthopoxvirus abatino</i></td><td><i>MH816996</i></td></tr>
-    <tr><td><i>Camelpox</i></td><td><i>MK910851</i></td></tr>
-    <tr><td><i>Buffalopox</i></td><td><i>MW883892</i></td></tr>
-    <tr><td><i>Taterapox</i></td><td><i>NC_008291</i></td></tr>
-    <tr><td><i>Raccoonpox</i></td><td><i>NC_027213</i></td></tr>
-    <tr><td><i>Volepox</i></td><td><i>NC_031033</i></td></tr>
-    <tr><td><i>Skunkpox</i></td><td><i>NC_031038</i></td></tr>
-    <tr><td><i>Monkeypox</i></td><td><i>NC_063383</i></td></tr>
+    <tr><td><i>Vaccinia Duke</i></td><td>DQ439815</td></tr>
+    <tr><td><i>Horsepox</i></td><td>DQ792504</td></tr>
+    <tr><td><i>Ectromelia</i></td><td>JQ410350</td></tr>
+    <tr><td><i>Variola</i></td><td>LR800244</td></tr>
+    <tr><td><i>Vaccinia Mulford</i></td><td>MF477237</td></tr>
+    <tr><td><i>Orthopoxvirus abatino</i></td><td>MH816996</td></tr>
+    <tr><td><i>Camelpox</i></td><td>MK910851</td></tr>
+    <tr><td><i>Buffalopox</i></td><td>MW883892</td></tr>
+    <tr><td><i>Taterapox</i></td><td>NC_008291</td></tr>
+    <tr><td><i>Raccoonpox</i></td><td>NC_027213</td></tr>
+    <tr><td><i>Volepox</i></td><td>NC_031033</td></tr>
+    <tr><td><i>Skunkpox</i></td><td>NC_031038</td></tr>
+    <tr><td><i>Monkeypox</i></td><td>NC_063383</td></tr>
 </table>
 
 <p>After downloading these genomes, we extracted 53 proteins across all species, creating individual protein alignments with MAFFT and a concatenated alignment for IQ-TREE analyses.</p>
