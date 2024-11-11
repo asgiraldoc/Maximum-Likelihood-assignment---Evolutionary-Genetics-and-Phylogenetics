@@ -110,7 +110,7 @@ Explanation:
 
 <h2>3. Exercise Overview</h2>
 
-<p>We'll use IQ-TREE to analyze the concatenated protein alignments under three approaches:</p>
+<p>We'll use IQ-TREE to analyze the protein alignments under three approaches:</p>
 <ol>
   <li><strong>Single Substitution Model</strong>: Applies one substitution model to all sequences (concatenated sequences).</li>
   <li><strong>Partitioned Model</strong>: Uses the best model for each partition (protein) individually.</li>
