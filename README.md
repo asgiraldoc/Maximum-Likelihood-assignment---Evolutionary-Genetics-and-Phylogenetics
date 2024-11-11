@@ -53,7 +53,7 @@ The following script uses MAFFT to align each protein sequence file individually
 
 <pre><code>for i in *.fasta
 do
-  mafft --reorder --thread 30 "$i" > "${i%.fasta}_aligned.fasta"
+  mafft "$i" > "${i%.fasta}_aligned.fasta"
 done
 </code></pre>
 
