@@ -10,7 +10,7 @@
 <h1>IQ-TREE Phylogenetic Analysis Tutorial: Orthopoxvirus Species</h1>
 
 <h2>1. Introduction</h2>
-<p>In this exercise, we will work with the complete genomes of 13 Orthopoxvirus species, comparing different strategies for phylogenetic inference using IQ-TREE. The dataset includes protein alignments across species with 100% coverage in all sequences. Our goal is to explore the impact of using a single general substitution model, a partitioned substitution model, and a partitioned-merged model approach on the robustness of our phylogenetic hypotheses.</p>
+<p>In this exercise, we will work with the complete genomes of 13 Orthopoxvirus species, comparing different strategies for phylogenetic inference using IQ-TREE. The dataset includes 52 protein alignments across species with 100% coverage in all sequences. Our goal is to explore the impact of using a single general substitution model, a partitioned substitution model, and a partitioned-merged model approach on the robustness of our phylogenetic hypotheses.</p>
 
 <h3>Species and Accession Numbers</h3>
 <table>
@@ -18,7 +18,7 @@
     <th>Species</th>
     <th>Accession Number</th>
   </tr>
-  <tr><td>Vaccinia Duke</td><td>DQ439815</td></tr>
+  <tr><td>_Vaccinia Duke_</td><td>DQ439815</td></tr>
   <tr><td>Horsepox</td><td>DQ792504</td></tr>
   <tr><td>Ectromelia</td><td>JQ410350</td></tr>
   <tr><td>Variola</td><td>LR800244</td></tr>
