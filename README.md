@@ -142,10 +142,6 @@ Explanation:
 
 <h2>5. Results Interpretation and Comparison</h2>
 
-
-
-<h2>Results: Distribution of Substitution Models</h2>
-
 <div style="text-align: center;">
     <img src="models.png" alt="IQ-TREE Models from Each Protein Alignment Partition" width="700">
 </div>
