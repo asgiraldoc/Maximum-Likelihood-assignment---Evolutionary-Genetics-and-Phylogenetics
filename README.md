@@ -141,7 +141,7 @@ Explanation:
 <p><strong>Note:</strong> Running this command will produce a phylogenetic tree based on the optimized partition-merged model, which can improve accuracy by consolidating partitions with similar substitution rates.</p>
 
 <h2>5. Results Interpretation and Comparison</h2>
-<h3>Distribution of Substitution Models</h3>
+<h3>5.1 Distribution of Substitution Models</h3>
 
 <p>The distribution of substitution models selected by IQ-TREE across the protein alignment partitions shows a significant diversity, as seen in the image below. This wide variation in model selection suggests that different evolutionary pressures and substitution patterns are at play for each protein, which could reflect functional specialization or adaptation within the Orthopoxvirus genus. The concatenated approach used the <code>Q.bird+F+I+G4</code> model, which appears only once among the individual protein models. This indicates that using a single model for all proteins may overlook unique evolutionary signals present in each protein, further emphasizing the importance of partition-specific models to capture the distinct substitution patterns and improve phylogenetic inference accuracy.</p>
 
