@@ -115,24 +115,30 @@ Explanation:
 <h3>Step 1: Running IQ-TREE with a Single Substitution Model</h3>
 <pre><code>iqtree -s concatenatedProt.fasta -st AA -bb 1000 -alrt 1000 -m TEST</code></pre>
 
-<p>Explanation: This command runs IQ-TREE on the alignment file <code>concatenatedProt.fasta</code>, specifying a AA dataset (<code>-st AA</code>). It tests various substitution models (<code>-m TEST</code>) to find the best fit for the data. The command also performs 1000 ultrafast bootstrap replicates (<code>-bb 1000</code>) and 1000 SH-like approximate likelihood ratio test replicates (<code>-alrt 1000</code>) to assess branch support.</p>
+<p>Explanation: This command runs IQ-TREE on the alignment file <code>concatenatedProt.fasta</code>, specifying a AA dataset (<code>-st AA</code>). It tests various substitution models (<code>-m TEST</code>) to find the best fit for the whole alignment. The command also performs 1000 ultrafast bootstrap replicates (<code>-bb 1000</code>) and 1000 SH-like approximate likelihood ratio test replicates (<code>-alrt 1000</code>) to assess branch support.</p>
 
 <p><strong>Note:</strong> The output will include a phylogenetic tree file, which contains the inferred evolutionary relationships among sequences in <code>concatenatedProt.fasta</code>. The tree will be annotated with branch support values from both the ultrafast bootstrap and SH-like approximate likelihood ratio tests, providing a measure of confidence in each branch.</p>
 
 <h3>Step 2: Running IQ-TREE with Partitioned Model Using ModelFinder</h3>
-<pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -m MFP -B 1000</code></pre>
-<p>Explanation: This command applies ModelFinder (-m MFP) to identify the best model for each partition (protein). Bootstrapping is performed with 1000 replicates.</p>
+<pre><code>iqtree -s protein_alignment.fasta -st AA -m TESTONLYNEW -AIC </code></pre>
+<p>Explanation: This command uses ModelFinder (<code>-m TESTONLYNEW</code>) to identify the best substitution model for each protein alignment (<code>-st AA</code>). The <code>-AIC</code> option specifies the Akaike Information Criterion (AIC) for model selection.</p>
 
-<h3>Step 3: Resampling Strategies</h3>
-<ol>
-  <li><strong>Bootstrap by Gene</strong>:
-    <pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -B 1000 --sampling GENE</code></pre>
-  </li>
-  <li><strong>Bootstrap by Gene and Site</strong>:
-    <pre><code>iqtree -s concatenated_proteins.phy -p proteins_partitions.nex -B 1000 --sampling GENESITE</code></pre>
-  </li>
-</ol>
-<p>Explanation: These options provide additional control over how bootstrap samples are generated, potentially enhancing support values by reducing false positives.</p>
+<p><strong>Note:</strong> that this command is focus solely on model selection.</p>
+
+<p>After identifying the best model for each alignment, the next step is to generate the file required to build a partitioned model according to IQ-TREE specifications. For more details, see the <a href="http://www.iqtree.org/doc/Advanced-Tutorial">advanced tutorial</a>.</p>
+
+<pre><code>iqtree -p proteins_partitions.nex -bb 1000 -alrt 1000</code></pre>
+
+<p><strong>Explanation:</strong> This command runs IQ-TREE using a partitioned model specified in the file <code>proteins_partitions.nex</code> (<code>-p</code> option). The Nexus file <code>proteins_partitions.nex</code> includes each protein alignment along with its respective substitution model, as identified in previous steps. IQ-TREE then applies these models to the specified partitions. Additionally, the command performs 1000 ultrafast bootstrap replicates (<code>-bb 1000</code>) and 1000 SH-like approximate likelihood ratio test replicates (<code>-alrt 1000</code>) to assess branch support.</p>
+
+<p><strong>Note:</strong> The output will include a single phylogenetic tree file that represents the inferred evolutionary relationships among the sequences defined in <code>proteins_partitions.nex</code>, with each partition analyzed using its optimal substitution model.</p>
+
+<h3>Step 3: Running IQ-TREE with a Partitioned-Merged Model (MFP+MERGE)</h3>
+<pre><code>iqtree -p proteins_partitions.nex -bb 1000 -alrt 1000 -m MFP+MERGE</code></pre>
+
+<p>Explanation: This command applies the <code>MFP+MERGE</code> model selection strategy in IQ-TREE, where ModelFinder uses a greedy algorithm (Lanfear et al., 2012) to optimize the partitioning scheme. It starts with each gene as a separate partition (using the full partition model) and progressively merges genes with similar evolutionary rates until the model fit stops improving. This approach helps reduce over-partitioning, resulting in a more efficient model that balances fit and complexity.</p>
+
+<p><strong>Note:</strong> Running this command will produce a phylogenetic tree based on the optimized partition-merged model, which can improve accuracy by consolidating partitions with similar substitution rates.</p>
 
 <h2>5. Results Interpretation and Comparison</h2>
 <ol>
